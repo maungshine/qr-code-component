@@ -10,15 +10,47 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    body, html {
+      display: grid;
+      height: 100vh;
+      place-items: center;
+      background-color: #d5e1ef;
+    }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .card-wrapper {
+      background-color: #ffffff;
+      padding: 1em;
+      border-radius: 5%;
+      width: calc(30vh);
+    }
+    
+    .qr-img {
+      width: 30vh;
+      height: 30vh;
+      border-radius: 5%;
+    }
+    .text-wrapper { 
+      font-family: sans-serif, Arial, Helvetica;
+    }
+    .text { opacity: 0.5;}
   </style>
 </head>
 <body>
+<main>
+  <div class="card-wrapper">
+    <div class="img-wrapper">
+      <img src="./images/image-qr-code.png" alt="qr code photo" class="qr-img">
+    </div>
+    <div class="text-wrapper">
+      <h2 class="heading">Improve your front-end skills by building projects</h2>
+      <p class="text">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </div>  
+</main>  
 
-  Improve your front-end skills by building projects
 
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
